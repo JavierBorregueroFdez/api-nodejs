@@ -1,0 +1,28 @@
+extends layout
+
+block content
+ img.image(src='/images/logo_mysql.png')
+ h2= "Se han recuperado "+data[0].NUMREG+" registro/s"
+
+ div.centrado
+  if data[0].NUMREG>0
+   table
+    tr
+     th= "DNI"
+     th= "Nombre"
+     th= "Apellidos"
+     th= "Direccion"
+     th= "Telefono"
+     th= "Equipo"
+    - for(var i=1; i< data.length; i++)
+     tr
+      td= data[i].DNI
+      td= data[i].Nombre
+      td= data[i].Apellidos
+      td= data[i].Direccion
+      td= data[i].Telefono
+      td= data[i].Equipo
+  br
+  a(href='/') volver
+    
+ 

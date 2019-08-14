@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  script(src="javascripts/routes.js")
+  form#x1(method='GET' onsubmit='return restPath()')
+    input#dni(type='text', placeholder='DNI')
+    button(type='submit') Buscar...

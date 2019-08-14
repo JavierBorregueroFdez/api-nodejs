@@ -1,0 +1,19 @@
+body, table {
+  text-align: center;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+th {
+  color: darkblue;
+  background-color: darkcyan;
+}
+td {
+  color: darkblue
+}
+div.centrado{
+  text-align: center;
+}
+div.centrado table {
+  margin: 0 auto;
+  text-align: left;
+}
